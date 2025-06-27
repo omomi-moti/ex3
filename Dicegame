@@ -1,0 +1,26 @@
+import java.util.Random;
+
+/**
+ * 2つのサイコロを振るシンプルなコンソールアプリケーションです。
+ */
+public class DiceGame {
+
+    public static void main(String[] args) {
+        // Randomクラスのインスタンスを生成して、乱数を扱えるようにします。
+        Random random = new Random();
+
+        // 1から6までの乱数を生成します。
+        // nextInt(6) は 0 から 5 までの整数を返すので、+1 して 1 から 6 の範囲に調整します。
+        int die1 = random.nextInt(6) + 1;
+        int die2 = random.nextInt(6) + 1;
+
+        // 2つのサイコロの合計値を計算します。
+        int totalValue = die1 + die2;
+
+        // 結果をコンソールに出力します。
+        System.out.println("Rolling dice...");
+        System.out.println("Die 1: " + die1);
+        System.out.println("Die 2: " + die2);
+        System.out.println("Total value: " + totalValue);
+    }
+}
