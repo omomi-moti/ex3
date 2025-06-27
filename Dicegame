@@ -9,7 +9,7 @@ public class DiceGame {
         // Randomクラスのインスタンスを生成して、乱数を扱えるようにします。
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
-　　　　 System.out.println("What is your name?");
+        System.out.println("What is your name?");
         System.out.print("> ");
         String name = scanner.nextLine();
 
